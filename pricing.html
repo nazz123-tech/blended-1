@@ -3,23 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet" />
     <title>Pricing</title>
 </head>
 <body>
         <header>
-            <nav>
-                <a class="logo" href="./index.html">Product</a>
-                <ul>
-                    <li><a class="navigation" href="./index.html">Product</a></li>
-                    <li><a class="navigation" href="./pricing.html">Pricing</a></li>
-                    <li><a class="navigation" href="./customers.html">Customers</a></li>
-                    <li><a class="navigation" href="./resources.html">Resources</a></li>
+            <div class="container">
+                <nav>
+                    <a class="logo" href="./index.html"><img src="./images/logo.svg" />Product</a>
+                    <ul class="nav_header">
+                        <li><a class="site" href="./index.html">Product</a></li>
+                        <li><a class="site current" href="./pricing.html">Pricing</a></li>
+                        <li><a class="site" href="./customers.html">Customers</a></li>
+                    </ul>
+                </nav>
+                <ul class="buttons_header">
+                    <li><button class="signin_header" type="button">Sign In</button></li>
+                    <li><button class="signup_header" type="button">Sign Up</button></li>
                 </ul>
-            </nav>
-            <ul>
-                <li><button class="signin" type="button">Sign In</button></li>
-                <li><button class="signup" type="button">Sign Up</button></li>
-            </ul>
+                <button class="burger_menu_header"><svg class="menu_icon">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg></button>
+            </div>
         </header>
-</body>
+        <main>
+            <section class="pricing_price_table">
+                <div class="container">
+                    <h4 class="pricing_price_table_upper_title">PRICING</h4>
+                    <h2 class="pricing_price_table_lower_title">Let's get some real work done here.</h2>
+                    <p class="pricing_price_table_text">Prodict is your perfect solution for working. Get started now for free</p>
+                    <ul class="price_table_list">
+                        <li class="price_table_list_item">
+                            <h3 class="price_table_list_item_name">Free</h3>
+                            <p class="price_table_list_item_description">Brief price description</p>
+                            <div class="price_wrapper">
+                                <div class="price">
+                                    <p class="price_value">0</p>
+                                </div>
+                                <div class="price_adds">
+                                    <p class="price_currency">$</p>
+                                    <p class="price_period">Per/month</p>
+                                </div>
+                            </div>
+                            <ul class="price_table_list_item_list">
+                                <li class="price_table_list_item_list_item">Only 2 Operators</li>
+                                <li class="price_table_list_item_list_item">Notifications</li>
+                                <li class="price_table_list_item_list_item">Landing Pages</li>
+                            </ul>
+                            <button class="price_table_list_item_btn" type="button">Order Now</button>
+                        </li>
+                        <li class="price_table_list_item">
+                            <h3 class="price_table_list_item_name">Standard</h3>
+                            <p class="price_table_list_item_description">Brief price description</p>
+                            <div class="price_wrapper">
+                                <div class="price">
+                                    <p class="price_value">5</p>
+                                </div>
+                                <div class="price_adds">
+                                    <p class="price_currency">$</p>
+                                    <p class="price_period">Per/month</p>
+                                </div>
+                            </div>
+                            <ul class="price_table_list_item_list">
+                                <li class="price_table_list_item_list_item">5 Operators</li>
+                                <li class="price_table_list_item_list_item">Notifications</li>
+                                <li class="price_table_list_item_list_item">Landing Pages</li>
+                            </ul>
+                            <button class="price_table_list_item_btn" type="button">Order Now</button>
+                        </li>
+                        <li class="price_table_list_item">
+                            <h3 class="price_table_list_item_name">Premium</h3>
+                            <p class="price_table_list_item_description">Brief price description</p>
+                            <div class="price_wrapper">
+                                <div class="price">
+                                    <p class="price_value">10</p>
+                                </div>
+                                <div class="price_adds">
+                                    <p class="price_currency">$</p>
+                                    <p class="price_period">Per/month</p>
+                                </div>
+                            </div>
+                            <ul class="price_table_list_item_list">
+                                <li class="price_table_list_item_list_item">10+ Operators</li>
+                                <li class="price_table_list_item_list_item">Notifications</li>
+                                <li class="price_table_list_item_list_item">Landing Pages</li>
+                            </ul>
+                            <button class="price_table_list_item_btn" type="button">Order Now</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="enterprise">
+                <div class="container">
+                    <h4 class="enterprise_upper_title">ENTERPRISE</h4>
+                    <h2 class="enterprise_lower_title">Are you interested in a custom tailored plan?</h2>
+                    <p class="enterprise_text">Product is a set of advanced features for really large teams with projects.</p>
+                    <button type="button" class="enterprise_btn">Get in touch with us</button>
+                </div>
+            </section>
+            <section class="product">
+                <div class="container">
+                    <img class="product_img" src="./images/amico.png" width="528">
+                    <div class="product_text_block">
+                    <h2 class="product_title">Product is being used with great effects alongside:</h2>
+                    <img class="product_mobile_img" width="352" src="./images/pricing_product_img.png">
+                    <ul class="product_list">
+                        <li class="product_list_item">
+                            <div class="product_wrapper">
+                                <svg width="24" height="24" class="product_icon"><use href="./images/feat1.svg"></use></svg>
+                                <h2 class="product_list_item_name">Enterpreneur</h2>
+                            </div>
+                            <p class="product_list_item_text">Product is a great way to help medium and samall enterprise owners achieve their goals</p>
+                        </li>
+                        <li class="product_list_item">
+                            <div class="product_wrapper">
+                                <svg width="24" height="24" class="product_icon">
+                                    <use href="./images/feat2.svg"></use>
+                                </svg>
+                                <h2 class="product_list_item_name">Accountants</h2>
+                            </div>
+                            <p class="product_list_item_text">Whether you are working on contract with clients, or on other key accounting documents, Product is for you</p>
+                        </li>
+                        <li class="product_list_item">
+                            <div class="product_wrapper">
+                                <svg width="24" height="24" class="product_icon">
+                                    <use href="./images/feat3.svg"></use>
+                                </svg>
+                                <h2 class="product_list_item_name">Universities</h2>
+                            </div>
+                            <p class="product_list_item_text">Organize university projects and have documents easily graded online with Product</p>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <section class="faq">
+                <div class="container">
+                    <h2 class="faq_title">Frequently asked question</h2>
+                    <p class="faq_text">Something is not clear? You need help? Check our FAQ section</p>
+                    <div class="qa_item">
+                        <input type="checkbox" id="q1">
+                        <label for="q1" class="qa_wrapper">
+                            <svg class="icon_plus" width="24" height="24">
+                                <use href="/images/plus_circle.svg"></use>
+                            </svg>
+                            <svg class="icon_minus" width="24" height="24">
+                                <use href="/images/minus_circle.svg"></use>
+                            </svg>
+                            <h4 class="question">What are my payment options?</h4>
+                        </label>
+                        <div class="answer">
+                            <p>After creating your account you will have an opportunity to create your first team and invite collaborators
+                                via email. An invitation will be sent automatically. Then, invited users can activate their account and
+                                finish onboarding.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="qa_item">
+                        <input type="checkbox" id="q2">
+                        <label for="q2" class="qa_wrapper">
+                            <svg class="icon_plus" width="24" height="24">
+                                <use href="/images/plus_circle.svg"></use>
+                            </svg>
+                            <svg class="icon_minus" width="24" height="24">
+                                <use href="/images/minus_circle.svg"></use>
+                            </svg>
+                            <h4 class="question">How can I invite collaborator to platform?</h4>
+                        </label>
+                        <div class="answer">
+                            <p>You can cancel your subscription anytime in your account settings. Your plan will remain active until the end
+                                of the billing period.</p>
+                        </div>
+                    </div>
+                    <div class="qa_item">
+                        <input type="checkbox" id="q3">
+                        <label for="q3" class="qa_wrapper">
+                            <svg class="icon_plus" width="24" height="24">
+                                <use href="/images/plus_circle.svg"></use>
+                            </svg>
+                            <svg class="icon_minus" width="24" height="24">
+                                <use href="/images/minus_circle.svg"></use>
+                            </svg>
+                            <h4 class="question">Can I upgrade my plan?</h4>
+                        </label>
+                        <div class="answer">
+                            <p>You can cancel your subscription anytime in your account settings. Your plan will remain active until the end
+                                of the billing period.</p>
+                        </div>
+                    </div>
+
+                    <div class="qa_item">
+                        <input type="checkbox" id="q4">
+                        <label for="q4" class="qa_wrapper">
+                            <svg class="icon_plus" width="24" height="24">
+                                <use href="/images/plus_circle.svg"></use>
+                            </svg>
+                            <svg class="icon_minus" width="24" height="24">
+                                <use href="/images/minus_circle.svg"></use>
+                            </svg>
+                            <h4 class="question">Can I cancel my plan at anytime?</h4>
+                        </label>
+                        <div class="answer">
+                            <p>You can cancel your subscription anytime in your account settings. Your plan will remain active until the end
+                                of the billing period.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="join">
+        <div class="container">
+          <div class="div">
+            <p class="join_title">Join 100 Compannies who boost their business with Product</p>
+            <button class="join_btn" type="button">Get This</button>
+          </div>
+          <img width="431" height="331" class="join_img" src="./images/screen.png">
+        </div> 
+      </section>
+        </main>
+            <footer>
+      <div class="container">
+        <div>
+        <a class="logo" href="./index.html"><img src="./images/logo.svg" />Product</a>
+        <div class="footer_icons">
+        <a href="#">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram">
+            </use>
+          </svg>
+        </a>
+      <a>
+        <svg width="13" height="24">
+          <use href="./images/icons.svg#icon-facebook">
+          </use>
+        </svg>
+      </a>
+      <a>
+        <svg width="22" height="20">
+          <use href="./images/icons.svg#icon-twitter">
+          </use>
+        </svg>
+      </a>
+        </div>
+      </div>
+      <div>
+        <h5 class="footer_title">Resource</h5>
+        <ul class="resources_list">
+            <li class="resources_list_item">About Us</li>
+            <li class="resources_list_item">Blog</li>
+            <li class="resources_list_item">Contact</li>
+            <li class="resources_list_item">FAQ</li>
+        </ul>
+      </div>
+      <div>
+      <h5 class="footer_title">Legal Stuff</h5>
+        <ul class="stuff_list">
+            <li class="stuff_list_item">Disclaimer</li>
+            <li class="stuff_list_item">Financing</li>
+            <li class="stuff_list_item">Privacy Policy</li> 
+            <li class="stuff_list_item">Terms of Service</li>
+        </ul>
+      </div> 
+      <div class="footer_last">
+        <h5 class="footer_text">knowing you're always on the best energy deal.</h5>
+        <form class="footer_form">
+        <label>
+          <input class="input_footer" type="tel" title="Enter your number">
+        </label>
+        <button class="footer_form_btn" type="button">Sign up Now</button>
+        </form>
+      </div>
+    </div>
+    </footer>
+    <p class="footer_ending">Made With Love By Figmaland All Right Reserved</p>
+            </body>
+            <script src="https://kit.fontawesome.com/1bc895577e.js" crossorigin="anonymous"></script>
 </html>
